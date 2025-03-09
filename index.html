@@ -266,15 +266,27 @@
 
 
 
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.9s" style="transform: translateX( 135px);">
-                                <a href="https://s22mcs.github.io/S22MCS02-/index.html" class="d-flex bg-secondary-gradient rounded py-3 px-4">
-                                    <i class='fab fa-leanpub' style='font-size:36px; color: white;'></i>
-                                    <div class="ms-3">
-                                        <p class="text-white mb-0">متوفر الآن</p>
-                                        <h5 class="text-white mb-0">الموقع</h5>
-                                    </div>
-                                </a>
-                            </div>
+
+                         
+
+<div class="col-sm-6 wow fadeIn" data-wow-delay="0.9s" style="transform: translateX(135px); text-align: center;">
+    <a href="https://s22mcs.github.io/S22MCS02-/index.html" target="_blank" rel="noopener noreferrer">
+        <div id="qrcode" style="display: inline-block;"></div>
+    </a>
+    <p style="margin-top: 10px; font-weight: bold;">اضغط لفتح الموقع  اوشارك الكود مع أصدقائك</p>
+  </div>
+  
+  <!-- مكتبة QRCode.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  
+  <script>
+    // إنشاء كود QR داخل العنصر المحدد
+    var qrcode = new QRCode(document.getElementById("qrcode"), {
+        text: "https://s22mcs.github.io/S22MCS02-/index.html",
+        width: 150,
+        height: 150
+    });
+  </script>
                             
 
 
